@@ -1,0 +1,16 @@
+{
+  "name": "calculator_app",
+  "version": "1.0.0",
+  "description": "Weekend 3 Challenge - Calculator App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Julie S. Mike",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
