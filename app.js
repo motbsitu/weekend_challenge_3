@@ -3,8 +3,6 @@ var bodyParser = require('body-parser');
 var path = require('path');
 //  Router
 var inputRouter = require('./routes/input');
-var calculationsRouter = require('./routes/calculations')
-
 
 var app = express();
 
@@ -14,8 +12,6 @@ app.use(express.static('public'));
 
 //  Using the routers
 app.use('/input', inputRouter);
-app.use('/calculations', calculationsRouter);
-
 
 
 //  Connecting to index.html

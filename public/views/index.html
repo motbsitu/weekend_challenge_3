@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset='utf-8'>
     <script src='assets/vendors/jquery-3.1.1.min.js'></script>
     <script src='scripts/client.js'></script>
     <title>Calculator</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Calculator</h1>
+    <div id='clearButton'>
+        <input type='button' name='clear' value=CLEAR />
+    </div>
+
     <div class="numberInput">
-    <form>
+        <form>
+            <label>Input Your First Number</label>
+            <input type='text' name='firstNumber' />
+            <label>Input Your Second Number</label>
+            <input type='text' name='secondNumber' />
+            <div id='buttons'>
+                <input type='button' name='add' value='Add' />
+                <input type='button' name='subtract' value='Subtract' />
+                <input type='button' name='multiply' value='Multiply' />
+                <input type='button' name='divide' value='Divide' />
+                <!--was working when these were buttons-->
+            </div>
 
-
-      <label>Input Your First Number</label>
-      <input type='text' name='firstNumber'/>
-      <label>Input Your Second Number</label>
-      <input type='text' name='secondNumber'/>
-      <button id="add">Add</button>
-      <button id="subract">Subtract</button>
-      <button id="multiply">Multiply</button>
-      <button id="divide">Divide</button>
-
-
-      <!--<div id='calcType'>
+            <!--<div id='calcType'>
 
 
       </div> -->
-    </form>
+        </form>
     </div>
 
     <div id='answer'>
 
     </div>
 
-  </body>
+</body>
+
 </html>
