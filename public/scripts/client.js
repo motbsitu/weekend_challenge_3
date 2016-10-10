@@ -1,5 +1,5 @@
 $(function() {
-    getNumber();
+  //  getNumber();  don't call here because will load previous data when loaded
     //submit event
     $('#buttons').on('click', 'input[type=button]', function(event) {
         event.preventDefault();
