@@ -1,0 +1,34 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+#clearButton input{
+  padding: 10px;
+  background: linear-gradient(#d250e6, #d3b9de);
+}
+.numberInput{
+  padding: 15px;
+    height: 25px;
+}
+label{
+  padding: 10px;
+}
+#buttons input{
+  margin: 15px 5px 15px 5px;
+  padding: 5px;
+  background: linear-gradient(gray, white);
+
+}
+
+h2{
+  margin-top: 25px;
+}
+#answer {
+  border: 1px solid black;
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+
+
+}

@@ -6,9 +6,9 @@ var input = {};
 var answer = 0;
 
 router.post('/', function(req, res) {
-    console.log('in input req.body', req.body);
+    //console.log('in input req.body', req.body);
     input = req.body;
-    console.log('input', input);
+    //console.log('input', input);
     math(input);
 
     res.sendStatus(200);
@@ -23,16 +23,16 @@ router.get('/', function(req, res) {
 function math() {
     switch (input.buttonType) {
         case 'add':
-            answer = parseInt(input.firstNumber) + parseInt(input.secondNumber);
+            answer = parseFloat(input.firstNumber) + parseFloat(input.secondNumber);
             break;
         case 'subtract':
-            answer = parseInt(input.firstNumber) - parseInt(input.secondNumber);
+            answer = parseFloat(input.firstNumber) - parseFloat(input.secondNumber);
             break;
         case 'multiply':
-            answer = parseInt(input.firstNumber) * parseInt(input.secondNumber);
+            answer = parseFloat(input.firstNumber) * parseFloat(input.secondNumber);
             break;
         case 'divide':
-            answer = parseInt(input.firstNumber) / parseInt(input.secondNumber);
+            answer = parseFloat(input.firstNumber) / parseFloat(input.secondNumber);
             break;
         default:
     }

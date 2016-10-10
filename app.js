@@ -16,7 +16,7 @@ app.use('/input', inputRouter);
 
 //  Connecting to index.html
 app.get('/', function(req, res){
-  console.log('received a request at', new Date());
+  //console.log('received a request at', new Date());
   var filename = path.join(__dirname, 'public/views/index.html');
   res.sendFile(filename);
 });
